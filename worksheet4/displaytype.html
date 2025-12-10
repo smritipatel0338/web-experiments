@@ -1,0 +1,48 @@
+<!--🧱 Problem 5: Display Types
+Goal: Practice block, inline, inline-block, float, and clear.
+Starter HTML:
+<div class="box1">Box 1</div>
+<div class="box2">Box 2</div>
+<p class="text">This text should appear below boxes.</p>
+Tasks:
+1.	Set both boxes to display: inline-block; with width 150px.
+2.	Give each box a different background color.
+3.	Use float: left; and observe how .text moves up.
+4.	Add .text { clear: both; } to fix layout.
+Expected Output:
+Two colored boxes side by side and text appearing below them.
+________________________________________-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Types Example</title>
+    <style>
+        .box1, .box2 {
+            display: inline-block;
+            width: 150px;
+            height: 100px;
+            margin: 5px;
+        }
+        .box1 {
+            background-color: lightcoral;
+            float: left;
+         
+        }
+        .box2 {
+            background-color: lightseagreen;
+            float: left;
+        
+        }
+        .text {
+            clear:both; /* Ensures text appears below the floated boxes */
+            font-size: 16px;
+            margin-top: 10px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+    <p class="text">This text should appear below boxes.</p>
+</body>
+</html>

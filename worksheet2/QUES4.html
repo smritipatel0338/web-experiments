@@ -1,0 +1,38 @@
+<!--Q4. Rowspan and Colspan
+Concept: Merging cells
+🧠 Task:
+Create a table where:
+•	The first cell in a row spans 2 rows
+•	Another cell spans 2 columns-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rowspan and Colspan Example</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        tr, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body> 
+    <table>
+  <tr>
+    <!-- This cell spans 2 rows -->
+    <td rowspan="2">Rowspan Cell</td>
+
+    <!-- These two cells will be merged horizontally -->
+    <td colspan="2">Colspan Cell</td>
+  </tr>
+
+  <tr>
+    <!-- Normal cells under the colspan -->
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>

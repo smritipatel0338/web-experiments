@@ -1,0 +1,41 @@
+ <!--Problem 7: CSS Units
+Goal: Practice px, %, em, rem, vh, vw.
+Starter HTML:
+<h1 class="px">Heading 1</h1>
+<h1 class="rem">Heading 2</h1>
+<div class="box"></div>
+Tasks:
+1.	.px { font-size: 24px; }
+2.	.rem { font-size: 2rem; }
+3.	.box { width: 50%; height: 20vh; background: coral; }
+4.	Try changing html { font-size: 10px; } and see effect on rem units.
+Expected Output:
+Box covers 50% width of screen, text changes with base font size.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Units Example</title>
+    <style>
+        html {
+            font-size: 16px; /* Change this to 10px to see effect on rem */
+        }
+        .px {
+            font-size: 24px;
+        }
+        .rem {
+            font-size: 2rem; /* 2 times the root font size */
+        }
+        .box {
+            width: 50%; /* 50% of the viewport width */
+            height: 20vh; /* 20% of the viewport height */
+            background: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="px">Heading 1 (24px)</h1>
+    <h1 class="rem">Heading 2 (2rem)</h1>
+    <div class="box"></div>
+</body>
+</html>
+

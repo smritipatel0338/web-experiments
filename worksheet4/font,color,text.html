@@ -1,0 +1,43 @@
+<!--🎨 Problem 2: Colors, Fonts, and Text Styles
+Goal: Learn how to use colors, font families, and text alignment.
+Starter HTML:
+<div class="hero">
+  <h1>My Website</h1>
+  <p class="tagline">Learn CSS step by step</p>
+</div>
+Tasks:
+1.	Change background color of .hero to light blue.
+2.	Set text color to dark navy.
+3.	Use font-family: "Poppins", sans-serif.
+4.	Center all text inside .hero.
+5.	Make heading font-size 36px, tagline font-size 18px.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colors, Fonts, and Text Styles Example</title>
+    <style>
+        .hero {
+            background-color: lightblue;
+            color: #001f3f; /* Dark navy color */
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .hero .tagline {
+            font-size: 18px;
+            margin: 5px 0 0 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="hero">
+        <h1>My Website</h1>
+        <p class="tagline">Learn CSS step by step</p>
+    </div>
+</body>
+</html>

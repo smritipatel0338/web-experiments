@@ -1,0 +1,30 @@
+<!--🧾 Problem 4: Applying Styles
+Goal: Learn the 3 ways to apply CSS.
+Starter HTML:
+<h2 id="inline">Inline Style</h2>
+<h2 class="internal">Internal Style</h2>
+<h2 class="external">External Style</h2>
+Tasks:
+1.	Add inline style: <h2 id="inline" style="color: red;">Inline Style</h2>
+2.	Add internal CSS for .internal { color: blue; }
+3.	Add external CSS file with .external { color: green; }
+4.	Observe which one is easiest to maintain and why.
+Expected Output:
+Red, blue, and green headings showing different styling <methods--->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Applying Styles Example</title>
+    <style>
+        .internal {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="externalstyles.css">
+</head>
+<body>
+    <h2 id="inline" style="color: red;">Inline Style</h2>
+    <h2 class="internal">Internal Style</h2>
+    <h2 class="external">External Style</h2>
+</body>
+</html>
